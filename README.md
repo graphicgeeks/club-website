@@ -175,3 +175,4 @@ npm run dev
 
 🤝 **Thank you for contributing!**
 Following this workflow keeps the project stable, readable, and production-ready.
+ 
