@@ -9,8 +9,4 @@ export const useTheme = () => {
   }
 
   return context;
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> parent of 5dae76b (Merge remote-tracking branch 'origin/v1.0' into refactor/toast)
