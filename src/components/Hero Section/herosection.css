@@ -1,0 +1,9 @@
+.hero-h1 {
+  display: inline-block;
+  will-change: transform;
+}
+
+.hero-text span {
+  display: inline-block;
+  padding: 0 0.2rem;
+}

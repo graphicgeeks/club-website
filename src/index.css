@@ -182,7 +182,7 @@ All colors MUST be HSL.
   }
 
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 3s cubic-bezier(0.65, 0, 0.35, 1) infinite;
   }
 
   .animate-fade-in {
@@ -228,5 +228,9 @@ All colors MUST be HSL.
 
 span,
 a {
+  will-change: transform;
+}
+
+button {
   will-change: transform;
 }

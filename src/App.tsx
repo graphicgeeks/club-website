@@ -1,11 +1,10 @@
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Preloader from "./components/PreLoader";
 import ToastProvider from "./components/Providers/ToastProvider";
+import Preloader from "./components/PreLoader";
 
 const queryClient = new QueryClient();
 
@@ -13,7 +12,6 @@ const App = () => (
   <>
     {/* <Preloader /> */}
     <QueryClientProvider client={queryClient}>
-      {/* <ThemeProvider> */}
       <TooltipProvider>
         <ToastProvider />
         <BrowserRouter>
