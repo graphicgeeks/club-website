@@ -10,7 +10,7 @@ export const faculty = [
       "Published 50+ Research Papers",
     ],
     email: "priya.sharma@geu.ac.in",
-    image: "/images/Faculties/faculty-1.webp",
+    image: "src/assets/images/Faculties/faculty-1.webp",
   },
   {
     name: "Prof. Anupam",
@@ -23,7 +23,7 @@ export const faculty = [
       "Google Cloud Certified",
     ],
     email: "rajesh.kumar@geu.ac.in",
-    image: "/images/Faculties/faculty-2.webp",
+    image: "src/assets/images/Faculties/faculty-2.webp",
   },
   {
     name: "Dr. Siddhanth Thapliyal",
@@ -36,6 +36,6 @@ export const faculty = [
       "Design Thinking Expert",
     ],
     email: "anjali.verma@geu.ac.in",
-    image: "/images/Faculties/faculty-3.webp",
+    image: "src/assets/images/Faculties/faculty-3.webp",
   },
 ];

@@ -1,31 +1,31 @@
-import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
-import { MembersSection } from "@/components/MembersSection";
-import { EventsSection } from "@/components/EventsSection";
-import { SkillsSection } from "@/components/SkillsSection";
-import { GallerySection } from "@/components/GallerySection";
-import { Footer } from "@/components/Footer";
-import IntroSection from "@/components/IntroSection";
-import { PeopleSection } from "@/components/PeopleSection";
+import { Header } from "@/components/Header/Header";
+import { HeroSection } from "@/components/Hero Section/HeroSection";
+import { MembersSection } from "@/components/Members/MembersSection";
+import { EventsSection } from "@/components/Events Section/EventsSection";
+import { SkillsSection } from "@/components/Skills Section/SkillsSection";
+import { GallerySection } from "@/components/Gallery Section/GallerySection";
+import { Footer } from "@/components/Footer/Footer";
+import IntroSection from "@/components/Intro Section/IntroSection";
 
 // People Section Data
 import { faculty } from "@/data/faculty";
 import { founders } from "@/data/founders";
+import { PeopleSection } from "@/components/Members/PeopleSection";
 
 const Index = () => {
-
   return (
     <div className="min-h-screen">
       <Header />
       <main>
         <HeroSection />
+        {/* 
         <IntroSection />
         <PeopleSection
           id={"faculty"}
           title="Our Faculty"
           subtitle="Meet the brilliant minds who guide and mentor our club members towards excellence"
           people={faculty}
-        />
+          />
         <PeopleSection
           id={"founders"}
           title="Our Founders"
@@ -35,7 +35,7 @@ const Index = () => {
         <MembersSection />
         <EventsSection />
         <SkillsSection />
-        <GallerySection />
+        <GallerySection /> */}
       </main>
       <Footer />
     </div>
