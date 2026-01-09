@@ -10,7 +10,7 @@ export const founders = [
       "Published 50+ Research Papers",
     ],
     email: "priya.sharma@geu.ac.in",
-    image: "/images/Founders/founder-1.webp",
+    image: "src/assets/images/Founders/founder-1.webp",
   },
   {
     name: "Aniruddh Singh",
@@ -23,7 +23,7 @@ export const founders = [
       "Google Cloud Certified",
     ],
     email: "rajesh.kumar@geu.ac.in",
-    image: "/images/Founders/founder-2.webp",
+    image: "src/assets/images/Founders/founder-2.webp",
   },
   {
     name: "Shauryaman Singh Taragi",
@@ -36,6 +36,6 @@ export const founders = [
       "Design Thinking Expert",
     ],
     email: "anjali.verma@geu.ac.in",
-    image: "/images/Founders/founder-3.webp",
+    image: "src/assets/images/Founders/founder-3.webp",
   },
 ];
