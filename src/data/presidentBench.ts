@@ -1,3 +1,7 @@
+import president1 from "../assets/images/Presidents/president-1.webp";
+import president2 from "../assets/images/Presidents/president-2.webp";
+import president3 from "../assets/images/Presidents/president-3.webp";
+
 export const presidentBench = [
   {
     name: "Sehar Fatima",
@@ -5,7 +9,7 @@ export const presidentBench = [
     year: "BTech CSE 2nd Year",
     skills: ["Full Stack Development", "System Design", "Leadership"],
     bio: "Keeping the club organized and ensuring smooth communication across all levels.",
-    image: "src/assets/images/Presidents/president-1.webp",
+    image: president1,
     linkedin: "#",
     github: "#",
     email: "arjun@example.com",
@@ -16,7 +20,7 @@ export const presidentBench = [
     year: "BTech CSE 3rd Year",
     skills: ["Project Management", "AI/ML", "Strategic Planning"],
     bio: "Leading the club towards new heights with innovative projects and collaborations.",
-    image: "src/assets/images/Presidents/president-2.webp",
+    image: president2,
     linkedin: "#",
     github: "#",
     email: "riya@example.com",

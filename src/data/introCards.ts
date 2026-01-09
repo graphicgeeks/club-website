@@ -1,20 +1,24 @@
+import intro1 from "../assets/images/IntroCards/intro-1.webp";
+import intro2 from "../assets/images/IntroCards/intro-2.webp";
+import intro3 from "../assets/images/IntroCards/intro-3.webp";
+
 export const introCardData = [
   {
     id: "Intro-Card-1",
     title: "Innovation First",
     text: "We encourage creative thinking and innovative solutions to real-world problems. Every idea matters, every solution counts.",
-    img: "src/assets/images/IntroCards/intro-1.webp",
+    img: intro1,
   },
   {
     id: "Intro-Card-2",
     title: "Skill Development",
     text: "From workshops to hackathons, we provide hands-on experience in cutting-edge technologies and industry best practices.",
-    img: "src/assets/images/IntroCards/intro-2.webp",
+    img: intro2,
   },
   {
     id: "Intro-Card-3",
     title: "Community Impact",
     text: "We believe in using technology for social good, creating solutions that make a positive difference in our community.",
-    img: "src/assets/images/IntroCards/intro-3.webp",
+    img: intro3,
   },
 ];
