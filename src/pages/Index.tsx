@@ -33,7 +33,7 @@ const Index = () => {
           title="Our Founders"
           subtitle="Guiding us with invaluable knowledge"
           people={founders}
-        />
+          />
         <MembersSection />
         <EventsSection />
         <SkillsSection />
