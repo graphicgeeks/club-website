@@ -1,7 +1,7 @@
 import useHeroTimeline from "@/animations/Hero Section Animation/useHeroTimeline";
 import GlassCardContainer from "./GlassCardContainer";
 import HeroBtnContainer from "./HeroBtnContainer";
-import "./herosection.css";
+import "./hero-section.css";
 
 export function HeroSection() {
   const containerRef = useHeroTimeline();

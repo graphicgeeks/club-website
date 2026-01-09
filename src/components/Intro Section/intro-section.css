@@ -1,0 +1,10 @@
+.intro-card-wrapper {
+  position: relative;
+}
+
+.intro-card {
+  position: sticky;     /* allows stacking */
+  top: 0;
+  height: 100vh;
+  will-change: transform, opacity;
+}

@@ -1,6 +1,6 @@
 import JoinClub from "./JoinClub";
 import QRCard from "./QRCard";
-import FooterContent from "./FooterContent/FooterContent";
+import FooterContent from "./Footer Content/FooterContent";
 import BottomBar from "./BottomBar";
 
 export function Footer() {

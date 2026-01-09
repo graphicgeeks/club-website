@@ -26,7 +26,7 @@ export function PeopleSection({
   people, 
 }: PeopleSectionProps) {
   return (
-    <section id={id} className="bg-[#487BCA] text-white dark:bg-[#111] py-20 relative z-10">
+    <section id={id} className="bg-[#487BCA] text-white dark:bg-[#111] py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold dark:gradient-text pb-4">
