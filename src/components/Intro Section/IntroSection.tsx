@@ -8,7 +8,7 @@ const IntroSection = () => {
   return (
     <section
       ref={containerRef}
-      className="intro-card-wrapper relative text-white text-center overflow-x-hidden overflow-y-hidden mb-[10vh]"
+      className="intro-card-wrapper relative text-white text-center overflow-x-hidden overflow-y-hidden mb-[20vh]"
     >
       {introCardData.map((card) => (
         <div
