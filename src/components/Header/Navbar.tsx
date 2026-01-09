@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="hidden md:flex items-center space-x-6">
       <button
-        onClick={() => scrollToSection("intro")}
+        onClick={() => scrollToSection("about")}
         className="text-sm font-medium hover:text-primary transition-colors"
       >
         About
