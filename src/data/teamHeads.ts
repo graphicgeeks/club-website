@@ -1,3 +1,8 @@
+import head1 from "../assets/images/Heads/head-1.webp";
+import head2 from "../assets/images/Heads/head-2.webp";
+import head3 from "../assets/images/Heads/head-3.webp";
+import head4 from "../assets/images/Heads/head-4.webp";
+
 export const teamHeads = [
   {
     name: "Hardik Bansal",
@@ -5,7 +10,7 @@ export const teamHeads = [
     year: "2nd Year IT",
     skills: ["Documentation", "Event Management", "Communication"],
     bio: "Keeping the club organized and ensuring smooth communication across all levels.",
-    image: "src/assets/images/Heads/head-1.webp",
+    image: head1,
     linkedin: "#",
     github: "#",
     email: "anisha@example.com",
@@ -38,7 +43,7 @@ export const teamHeads = [
     year: "BCA AI/DS",
     skills: ["Full Stack Development", "System Design", "Leadership"],
     bio: "Visionary leader who established Graphic Geeks with a mission to foster innovation.",
-    image: "src/assets/images/Heads/head-3.webp",
+    image: head3,
     linkedin: "#",
     github: "#",
     email: "arjun@example.com",
@@ -54,7 +59,7 @@ export const teamHeads = [
     year: "BTech CSE",
     skills: ["Project Management", "AI/ML", "Strategic Planning"],
     bio: "Leading the club towards new heights with innovative projects and collaborations.",
-    image: "src/assets/images/Heads/head-4.webp",
+    image: head4,
     linkedin: "#",
     github: "#",
     email: "riya@example.com",

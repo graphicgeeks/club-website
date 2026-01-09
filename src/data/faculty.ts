@@ -1,3 +1,7 @@
+import faculty1 from "../assets/images/Faculties/faculty-1.webp";
+import faculty2 from "../assets/images/Faculties/faculty-2.webp";
+import faculty3 from "../assets/images/Faculties/faculty-3.webp";
+
 export const faculty = [ 
   {
     name: "Dr. Narayan",
@@ -10,7 +14,7 @@ export const faculty = [
       "Published 50+ Research Papers",
     ],
     email: "priya.sharma@geu.ac.in",
-    image: "src/assets/images/Faculties/faculty-1.webp",
+    image: faculty1
   },
   {
     name: "Prof. Anupam",
@@ -23,7 +27,7 @@ export const faculty = [
       "Google Cloud Certified",
     ],
     email: "rajesh.kumar@geu.ac.in",
-    image: "src/assets/images/Faculties/faculty-2.webp",
+    image: faculty2
   },
   {
     name: "Dr. Siddhanth Thapliyal",
@@ -36,6 +40,6 @@ export const faculty = [
       "Design Thinking Expert",
     ],
     email: "anjali.verma@geu.ac.in",
-    image: "src/assets/images/Faculties/faculty-3.webp",
+    image: faculty3
   },
 ];

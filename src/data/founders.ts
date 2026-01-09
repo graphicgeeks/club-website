@@ -1,3 +1,7 @@
+import founder1 from "../assets/images/Founders/founder-1.webp";
+import founder2 from "../assets/images/Founders/founder-2.webp";
+import founder3 from "../assets/images/Founders/founder-3.webp";
+
 export const founders = [
   {
     name: "Shakshat Jain",
@@ -10,7 +14,7 @@ export const founders = [
       "Published 50+ Research Papers",
     ],
     email: "priya.sharma@geu.ac.in",
-    image: "src/assets/images/Founders/founder-1.webp",
+    image: founder1,
   },
   {
     name: "Aniruddh Singh",
@@ -23,7 +27,7 @@ export const founders = [
       "Google Cloud Certified",
     ],
     email: "rajesh.kumar@geu.ac.in",
-    image: "src/assets/images/Founders/founder-2.webp",
+    image: founder2,
   },
   {
     name: "Shauryaman Singh Taragi",
@@ -36,6 +40,6 @@ export const founders = [
       "Design Thinking Expert",
     ],
     email: "anjali.verma@geu.ac.in",
-    image: "src/assets/images/Founders/founder-3.webp",
+    image: founder3,
   },
 ];
