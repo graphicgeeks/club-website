@@ -1,0 +1,8 @@
+.intro-head span,
+.intro-text span {
+  will-change: transform;
+}
+
+.intro-head {
+  display: inline-block;
+}
