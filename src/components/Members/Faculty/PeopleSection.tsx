@@ -1,12 +1,10 @@
+import useProfileCardTimeline from "@/animations/People Section Animation/useProfileCardTimeline";
 import { ProfileCard } from "./ProfileCard";
+import "./people-section.css"
 
 interface People {
   name: string;
   designation: string;
-  specialization: string;
-  experience: string;
-  achievements: string[];
-  email: string;
   image: string;
 }
 
@@ -15,7 +13,7 @@ interface PeopleSectionProps {
   subDesignation?: string;
   title?: string;
   subtitle?: string;
-  people: People[]; 
+  people: People[];
 }
 
 export function PeopleSection({
@@ -23,12 +21,13 @@ export function PeopleSection({
   title,
   subtitle,
   subDesignation,
-  people, 
+  people,
 }: PeopleSectionProps) {
+  const containerRef = useProfileCardTimeline();
   return (
-    <section id={id} className="bg-[#487BCA] text-white dark:bg-[#111] py-20">
+    <section id={id} className="bg-[#487BCA] text-white dark:bg-[#111] py-20 pt-30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-container text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold dark:gradient-text pb-4">
             {title}
           </h2>
@@ -44,7 +43,7 @@ export function PeopleSection({
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {people.map((person, index) => (
             <ProfileCard key={index} member={person} />
           ))}
