@@ -1,10 +1,13 @@
+import useProfileCardTimeline from "@/animations/People Section Animation/useProfileCardTimeline";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Mail, Award, BookOpen } from "lucide-react";
+// import { Badge } from "@/components/ui/badge";
+// import { Mail, Award, BookOpen } from "lucide-react";
 
 export function ProfileCard({ member }) {
+  const containerRef = useProfileCardTimeline();
+
   return (
-    <Card className="glass-card hover:glow-effect transition-all duration-300 transform hover:-translate-y-2 group">
+    <Card  className="profile-card glass-card hover:glow-effect transform hover:-translate-y-2 group">
       <CardContent className="p-8">
         <div className="text-center mb-6">
           <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300">
@@ -20,16 +23,10 @@ export function ProfileCard({ member }) {
           <p className="text-primary font-semibold mb-2">
             {member.designation}
           </p>
-          {member.experience && (
-            <span>
-              <Badge variant="secondary" className="mb-4">
-                {member.experience} Experience
-              </Badge>
-            </span>
-          )}
         </div>
 
-        <div className="space-y-4">
+        {/* Uncomment for more detials on Card */}
+        {/* <div className="space-y-4">
           {member.specialization && (
             <div className="flex items-start space-x-3">
               <span>
@@ -79,7 +76,8 @@ export function ProfileCard({ member }) {
               </a>
             </div>
           )}
-        </div>
+        </div> */}
+        {/* Uncomment for more detials on Card */}
       </CardContent>
     </Card>
   );
