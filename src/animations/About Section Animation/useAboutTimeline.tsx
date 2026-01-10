@@ -12,6 +12,7 @@ const useAboutTimeline = () => {
   useGSAP(
     () => {
       const tl = gsap.timeline({
+        ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
         scrollTrigger: {
           trigger: container.current,
           start: "top top",
@@ -27,7 +28,6 @@ const useAboutTimeline = () => {
         {
           opacity: 1,
           y: 0,
-          ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
         }
       );
 
@@ -42,7 +42,7 @@ const useAboutTimeline = () => {
         {
           opacity: 1,
           y: 0,
-          ease: "power3.inOut",
+          // ease: "power3.inOut",
           stagger: 0.1,
         }
       );

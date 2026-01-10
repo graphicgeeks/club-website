@@ -76,11 +76,17 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --member-card-bg: white;
+    --member-card-shadow: lightseagreen;
   }
 
   .dark {
     --background: 13 6% 9%;
     --foreground: 210 40% 98%;
+
+    --member-card-bg: rgba(255, 255, 255, 0.03);
+    --member-card-shadow: whitesmoke;
 
     --card: 20 14% 12%;
     --card-foreground: 210 40% 98%;
