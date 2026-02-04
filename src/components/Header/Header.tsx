@@ -1,9 +1,12 @@
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import clubLogo from "@/assets/club-logo.webp";
-import collegeLogo from "@/assets/college-logo.png";
 import Navbar from "./Navbar";
-import { scrollToSection } from "@/utils/scrollToSection";
+
+/*
+ * import { Button } from "@/components/ui/button";
+ * import collegeLogo from "@/assets/college-logo.png";
+ * import { scrollToSection } from "@/utils/scrollToSection";
+ */
 
 export function Header() {
   return (
@@ -19,17 +22,27 @@ export function Header() {
           </div>
         </div>
 
-        <Navbar />
+        <Navbar
+          navdata={[
+            { name: "About", scroll: "about" },
+            { name: "Faculty", scroll: "faculty" },
+            { name: "Founders", scroll: "founders" },
+            { name: "Members", scroll: "members" },
+            { name: "Events", scroll: "events" },
+            { name: "Skills", scroll: "skills" },
+            { name: "Gallery", scroll: "gallery" },
+          ]}
+        />
 
         <div className="flex items-center space-x-4">
           {/* <img src={collegeLogo} alt="Graphic Era College" className="h-10 w-10" /> */}
           <ThemeToggle />
-          <Button
+          {/* <Button
             onClick={() => scrollToSection("join-event")}
             className="bg-primary hover:bg-primary-hover text-primary-foreground font-medium px-6 py-2 rounded-full"
           >
             Join Event
-          </Button>
+          </Button> */}
         </div>
       </div>
     </header>
