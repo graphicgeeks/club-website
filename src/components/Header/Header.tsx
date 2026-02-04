@@ -28,7 +28,7 @@ export function Header() {
             onClick={() => scrollToSection("join")}
             className="bg-primary hover:bg-primary-hover text-primary-foreground font-medium px-6 py-2 rounded-full"
           >
-            Join Club
+            Join Event
           </Button>
         </div>
       </div>

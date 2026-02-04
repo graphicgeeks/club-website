@@ -7,7 +7,7 @@ const ContactInfo = () => {
       text: "graphicgeeks@geu.ac.in",
       href: "mailto:graphicgeeks@geu.ac.in",
     },
-    { icon: Phone, text: "+91 98765 43210", href: "tel:+919876543210" },
+    { icon: Phone, text: "+91 88404 44355", href: "tel:+918840444355" },
     { icon: MapPin, text: "Graphic Era University, Dehradun", href: "#" },
   ];
 
