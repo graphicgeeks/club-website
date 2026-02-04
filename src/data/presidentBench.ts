@@ -1,9 +1,6 @@
 import president1 from "../assets/images/Presidents/president-1.webp";
 import president2 from "../assets/images/Presidents/president-2.webp";
-// import president3 from "../assets/images/Presidents/president-3.webp";
-
-const president3 =
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face";
+import president3 from "../assets/images/Presidents/president-3.webp";
 
 export const presidentBench = [
   {
