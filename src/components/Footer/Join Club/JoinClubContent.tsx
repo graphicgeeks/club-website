@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { ExternalLink } from "lucide-react";
 import { toast } from "react-toastify";
 
-const JoinClub = () => {
+const JoinClubContent = () => {
   return (
     <div>
       <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
@@ -21,7 +21,7 @@ const JoinClub = () => {
             size="lg"
             onClick={() =>
               toast.info(
-                "We're not accepting responses right now. Please check back soon 🙂"
+                "We're not accepting responses right now. Please check back soon 🙂",
               )
             }
             className="bg-primary hover:bg-primary-hover text-primary-foreground font-semibold px-8"
@@ -40,4 +40,4 @@ const JoinClub = () => {
   );
 };
 
-export default JoinClub;
+export default JoinClubContent;

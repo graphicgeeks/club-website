@@ -6,6 +6,7 @@ import MembersSection from "@/components/Members/Team/MembersSection";
 import { EventsSection } from "@/components/Events Section/EventsSection";
 import { SkillsSection } from "@/components/Skills Section/SkillsSection";
 import { GallerySection } from "@/components/Gallery Section/GallerySection";
+import JoinEvent from "@/components/Footer/Join Event/JoinEvent";
 import { Footer } from "@/components/Footer/Footer";
 
 // People Section Data
@@ -39,6 +40,9 @@ const Index = () => {
         <SkillsSection />
         <GallerySection />
       </main>
+
+      <JoinEvent />
+
       <Footer />
     </div>
   );
