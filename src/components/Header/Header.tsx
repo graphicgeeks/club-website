@@ -25,7 +25,7 @@ export function Header() {
           {/* <img src={collegeLogo} alt="Graphic Era College" className="h-10 w-10" /> */}
           <ThemeToggle />
           <Button
-            onClick={() => scrollToSection("join")}
+            onClick={() => scrollToSection("join-event")}
             className="bg-primary hover:bg-primary-hover text-primary-foreground font-medium px-6 py-2 rounded-full"
           >
             Join Event
