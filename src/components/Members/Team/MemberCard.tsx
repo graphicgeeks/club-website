@@ -19,11 +19,11 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
   return (
     <div
       ref={containerRef}
-      className="member-card-overlay w-[20rem] md:w-fit lg:w-fit flex flex-col gap-4 overflow-hidden text-black dark:text-white pb-3"
+      className="member-card-overlay w-fit flex flex-col gap-4 overflow-hidden text-black dark:text-white pb-3"
     >
-      <div className="member-card p-4 rounded-lg relative">
+      <div className="member-card rounded-lg relative">
         {/* Display Side */}
-        <div className="front w-full flex flex-col md:flex-row lg:flex-row gap-5">
+        <div className="front w-full flex flex-col md:flex-row lg:flex-row gap-5 p-4">
           <div className="team-img-container h-[15rem] w-full md:w-[15rem] lg:w-[15rem]">
             <img
               src={member.image}
@@ -32,7 +32,7 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
             />
           </div>
           <div className="team-details w-[20rem] flex flex-col justify-between gap-4 md:py-4 lg:py-4">
-            <div>
+            <div className="">
               <h2 className="text-2xl font-semibold">{member.name}</h2>
               <h3 className="text-sm">
                 <span>Role: </span>
