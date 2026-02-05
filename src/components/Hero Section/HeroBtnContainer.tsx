@@ -12,14 +12,14 @@ const HeroBtnContainer = () => {
       >
         Explore Our Club <ArrowRight className="ml-2 h-5 w-5" />
       </Button>
-      <Button
+      {/* <Button
         onClick={() => scrollToSection("join")}
         variant="outline"
         size="lg"
         className="border-white text-primary hover:bg-white hover:text-primary font-semibold px-8 py-3 rounded-full text-lg"
       >
         Join Now
-      </Button>
+      </Button> */}
     </div>
   );
 };
