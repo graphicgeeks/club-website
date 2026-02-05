@@ -8,7 +8,7 @@ export const founders = [
     description:
       "Founded GraphicGeeks and played a key role in establishing its vision, structure and growth.",
     image: founder1,
-    linkedin: "https://www.linkedin.com/in/hardik-bansal-149405307/",
+    linkedin: "https://www.linkedin.com/in/shakshatjain?trk=blended-typeahead",
   },
   {
     name: "Aniruddh Singh",

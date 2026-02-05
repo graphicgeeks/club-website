@@ -1,5 +1,7 @@
+import { scrollToSection } from "@/utils/scrollToSection";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import clubLogo from "@/assets/club-logo.webp";
+import { Button } from "../ui/button";
 import Navbar from "./Navbar";
 
 /*
@@ -37,12 +39,12 @@ export function Header() {
         <div className="flex items-center space-x-4">
           {/* <img src={collegeLogo} alt="Graphic Era College" className="h-10 w-10" /> */}
           <ThemeToggle />
-          {/* <Button
+          <Button
             onClick={() => scrollToSection("join-event")}
             className="bg-primary hover:bg-primary-hover text-primary-foreground font-medium px-6 py-2 rounded-full"
           >
             Join Event
-          </Button> */}
+          </Button>
         </div>
       </div>
     </header>
