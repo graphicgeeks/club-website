@@ -7,7 +7,7 @@ import gsap from "gsap";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const useAboutTimeline = () => {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   useGSAP(
     () => {
@@ -18,7 +18,7 @@ const useAboutTimeline = () => {
           start: "top top",
           // end: "top -20%", // accept if want automatic
           end: "top -100%", // remove if want automatic
-          pin: true,
+          pin: true, // remove if want automatic
           scrub: true, // remove if want automatic
         },
       });

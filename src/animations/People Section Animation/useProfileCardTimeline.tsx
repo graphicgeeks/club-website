@@ -6,21 +6,17 @@ import gsap from "gsap";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const useProfileCardTimeline = () => {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   useGSAP(
-    () => {
-      const tl = gsap.timeline({
-        ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
-        scrollTrigger: {
-          trigger: container.current,
-          start: "top center",
-          end: `top`,
-        },
-      });
+    (context) => {
+      if (!container.current) return;
 
-      tl.fromTo(
-        ".profile-card",
+      const cards = context.selector(".profile-card");
+      if (!cards.length) return;
+
+      gsap.fromTo(
+        cards,
         {
           opacity: 0,
           y: "5rem",
@@ -28,11 +24,18 @@ const useProfileCardTimeline = () => {
         {
           opacity: 1,
           y: 0,
-          stagger: 0.5,
-        }
+          stagger: 0.3,
+          ease: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
+          scrollTrigger: {
+            trigger: container.current,
+            start: "top 70%",
+            end: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        },
       );
     },
-    { scope: container }
+    { scope: container },
   );
 
   return container;

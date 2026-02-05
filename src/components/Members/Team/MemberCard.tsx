@@ -1,3 +1,4 @@
+import useMemberCardAnimation from "@/animations/Member Section Animation/useMemberCardAnimation";
 import { Member } from "./interface/teamInterface";
 import { useState } from "react";
 
@@ -8,6 +9,7 @@ interface MemberCardProps {
 }
 
 const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
+  const containerRef = useMemberCardAnimation();
   const [moved, setMoved] = useState(false);
 
   function toggleTeam() {
@@ -15,8 +17,11 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
   }
 
   return (
-    <div className="member-card-overlay absolute top-0 left-1/2 w-[20rem] md:w-fit lg:w-fit flex flex-col gap-4 -translate-x-1/2 overflow-x-hidden text-black dark:text-white">
-      <div className="member-card p-4 rounded-lg transition-transform duration-700 relative">
+    <div
+      ref={containerRef}
+      className="member-card-overlay w-[20rem] md:w-fit lg:w-fit flex flex-col gap-4 overflow-hidden text-black dark:text-white pb-3"
+    >
+      <div className="member-card p-4 rounded-lg relative">
         {/* Display Side */}
         <div className="front w-full flex flex-col md:flex-row lg:flex-row gap-5">
           <div className="team-img-container h-[15rem] w-full md:w-[15rem] lg:w-[15rem]">
@@ -31,12 +36,28 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
               <h2 className="text-2xl font-semibold">{member.name}</h2>
               <h3 className="text-sm">
                 <span>Role: </span>
-                <span className="text-blue-900 dark:text-blue-500 tracking-wider uppercase font-semibold underline">
+                <span className="text-teal-700 dark:text-blue-500 tracking-wider uppercase font-semibold">
                   {member.position}
                 </span>
               </h3>
+              <h3 className="text-sm">
+                <span>Course: </span>
+                <span className="text-teal-700 dark:text-blue-500 tracking-wider uppercase font-semibold">
+                  {member.course}
+                </span>
+              </h3>
+              <h3 className="text-sm">
+                <span>LinkedIn: </span>
+                <a
+                  className="underline text-cyan-500 dark:text-cyan-500"
+                  href={member.linkedin}
+                  target="_blank"
+                >
+                  Click here
+                </a>
+              </h3>
             </div>
-            <p className="text-sm text-gray-900 dark:text-gray-400">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
               {member.description}
             </p>
           </div>
@@ -45,9 +66,9 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
         {/* Right Side for Team Heads */}
         {isTeamHead && (
           <div
-            className="back absolute top-0 left-0 h-full w-full bg-zinc-900 border-2 border-grey text-white rounded-lg flex flex-col gap-2 justify-start p-4"
+            className="back absolute top-0 left-[0.5rem] h-full w-full bg-[whitesmoke] dark:bg-zinc-900 border-2 border-gray-600 dark:border-grey text-zinc-900 dark:text-white rounded-lg flex flex-col gap-2 justify-start p-4"
             style={{
-              transform: moved ? "translateX(0)" : "translateX(100%)",
+              transform: moved ? "translateX(-0.5rem)" : "translateX(100%)",
             }}
           >
             {member.team.map((team, index) => {
@@ -64,7 +85,7 @@ const MemberCard = ({ index, member, isTeamHead }: MemberCardProps) => {
       {isTeamHead && (
         <button
           onClick={toggleTeam}
-          className="show-team-btn border-2 w-full py-2 rounded-lg cursor-pointer bg-zinc-900 text-white active:scale-95"
+          className="show-team-btn border-2 border-gray-600 w-full py-2 rounded-lg cursor-pointer bg-white dark:bg-zinc-900 dark:text-[whitesmoke] active:scale-95"
         >
           {moved ? "Hide Team" : "Show Team"}
         </button>

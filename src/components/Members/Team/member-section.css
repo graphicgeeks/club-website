@@ -3,9 +3,11 @@
   -webkit-backdrop-filter: blur(12px);
   background: var(--member-card-bg);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+  border-radius: 16px;
+  will-change: scale;
 }
+
 
 .member-card img {
   border-radius: 14px;

@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 const useHeroTimeline = () => {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   useGSAP(
     () => {
