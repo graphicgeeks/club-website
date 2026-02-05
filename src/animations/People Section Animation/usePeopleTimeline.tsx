@@ -6,7 +6,7 @@ import gsap from "gsap";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const usePeopleTimeline = () => {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   useGSAP(
     () => {

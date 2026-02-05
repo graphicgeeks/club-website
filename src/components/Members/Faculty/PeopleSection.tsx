@@ -4,8 +4,9 @@ import "./people-section.css"
 
 interface People {
   name: string;
-  designation: string;
   image: string;
+  linkedin: string,
+  description: string
 }
 
 interface PeopleSectionProps {

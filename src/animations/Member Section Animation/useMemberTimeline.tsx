@@ -6,7 +6,7 @@ import gsap from "gsap";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const useMemberTimeline = () => {
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement | null>(null);
 
   useGSAP(
     () => {
@@ -30,10 +30,10 @@ const useMemberTimeline = () => {
           opacity: 1,
           y: 0,
           duration: 0.6,
-        }
+        },
       );
     },
-    { scope: container }
+    { scope: container },
   );
 
   return container;

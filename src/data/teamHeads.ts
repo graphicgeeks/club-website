@@ -7,9 +7,11 @@ export const teamHeads = [
   {
     name: "Hardik Bansal",
     position: "Secratary",
+    course: "BCA(AI/DS) 2nd year",
     description:
-      "Keeping the club organized and ensuring smooth communication across all levels.",
+      "Handling administrative responsibilities while maintaining clarity, structure, and effective communication.",
     image: head1,
+    linkedin: "https://www.linkedin.com/in/hardik-bansal-149405307/",
     team: [
       { id: "12sfa4", name: "Sam Sulek 💪💪" },
       { id: "afhha", name: "Gangnam Style 🕺🎶🕺" },
@@ -18,9 +20,11 @@ export const teamHeads = [
   {
     name: "Tanishk Bhatt",
     position: "Technical Head",
+    course: "BCA(AI/DS) 2nd year",
     description:
-      "Supporting presidential initiatives and driving technical excellence in all projects.",
+      "Driving technical excellence through problem-solving, optimization, and collaborative engineering.",
     image: head2,
+    linkedin: "https://www.linkedin.com/in/tanishk-bhatt-000a6b325/",
     team: [
       { id: "1aafa4", name: "Fatima 🧕" },
       { id: "35yd", name: "Iron Man 😎😎" },
@@ -31,9 +35,11 @@ export const teamHeads = [
   {
     name: "Sumit Shukla",
     position: "Marketing Head",
+    course: "BCA(AI/DS) 2nd year",
     description:
-      "Visionary leader who established Graphic Geeks with a mission to foster innovation.",
+      "Driving brand growth through strategic marketing, outreach campaigns, and community engagement.",
     image: head3,
+    linkedin: "https://www.linkedin.com/in/sumit-shukla-141b03244/",
     team: [
       { id: "12fafa4", name: "Raju 😎" },
       { id: "a22fa", name: "Shyam 🧑‍🏫" },
@@ -43,9 +49,11 @@ export const teamHeads = [
   {
     name: "Tanishtha Uniyal",
     position: "Social and Content Head",
+    course: "B.TECH cse (AI/DS) 2nd year",
     description:
-      "Leading the club towards new heights with innovative projects and collaborations.",
+      "Managing content creation, maintaining brand voice, and delivering impactful digital narratives.",
     image: head4,
+    linkedin: "https://www.linkedin.com/in/tanishtha-uniyal-8345762b0/",
     team: [
       { id: "12fafa4", name: "Michael Jackson 🕺🕺" },
       { id: "a22fa", name: "Salmon Bhai 🦌🚌" },
