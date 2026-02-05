@@ -5,41 +5,23 @@ import founder3 from "../assets/images/Founders/founder-3.webp";
 export const founders = [
   {
     name: "Shakshat Jain",
-    designation: "Head of Department - Computer Science",
-    specialization: "Artificial Intelligence & Machine Learning",
-    experience: "15+ years",
-    achievements: [
-      "Best Faculty Award 2023",
-      "Research Excellence Award",
-      "Published 50+ Research Papers",
-    ],
-    email: "priya.sharma@geu.ac.in",
+    description:
+      "Founded GraphicGeeks and played a key role in establishing its vision, structure and growth.",
     image: founder1,
+    linkedin: "https://www.linkedin.com/in/hardik-bansal-149405307/",
   },
   {
     name: "Aniruddh Singh",
-    designation: "Associate Professor - Information Technology",
-    specialization: "Web Development & Cloud Computing",
-    experience: "12+ years",
-    achievements: [
-      "Industry Collaboration Award",
-      "Student Mentor of the Year",
-      "Google Cloud Certified",
-    ],
-    email: "rajesh.kumar@geu.ac.in",
+    description:
+      "Founded GraphicGeeks and actively contributed to defining its mission, framework, and early development.",
     image: founder2,
+    linkedin: "https://www.linkedin.com/in/aniruddh-singh-8b3ba2263/",
   },
   {
     name: "Shauryaman Singh Taragi",
-    designation: "Assistant Professor - Software Engineering",
-    specialization: "Mobile App Development & UI/UX Design",
-    experience: "8+ years",
-    achievements: [
-      "Young Researcher Award",
-      "App Development Specialist",
-      "Design Thinking Expert",
-    ],
-    email: "anjali.verma@geu.ac.in",
+    description:
+      "Founded GraphicGeeks and helped shape its identity, organizational framework, and growth journey.",
     image: founder3,
+    linkedin: "https://www.linkedin.com/in/shauryaman-singh-taragi-b57305250/",
   },
 ];

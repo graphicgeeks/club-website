@@ -6,7 +6,9 @@ export interface Team {
 export interface Member {
   name: string;
   position: string;
+  course: string;
   description: string;
   image: string;
+  linkedin: string;
   team?: Team[];
 }
