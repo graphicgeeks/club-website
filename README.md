@@ -1,178 +1,73 @@
-# Club Website
+# React + TypeScript + Vite
 
-Welcome to this project! This repository follows a **strict and structured Git workflow** to ensure clean history, safe releases, and smooth collaboration. Please read this guide carefully before contributing.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 🚀 Contributing
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-Thank you for your interest in contributing! This project uses a **protected-branch, version-based workflow**.
+## React Compiler
 
-### 🔐 Branch Protection & Versioning
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-* **`main`** → **Release-only branch**
+## Expanding the ESLint configuration
 
-  * Fully protected
-  * Contains only **stable, production-ready releases**
-  * No direct development or feature PRs
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-* **`v1.0`** → **Active development branch**
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-  * Current stable version under development
-  * All feature, bugfix, and refactor PRs must target this branch
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-* **Future versions** (e.g. `v2.0`)
-
-  * Created only for major redesigns or breaking changes
-
-**Current Versions:**
-
-* 🟢 **v1.0** — Active & stable
-* 🔴 **v2.0** — Planned major overhaul
-
-> ⚠️ **Never push directly to `main`.**
-> ⚠️ **Never open PRs directly to `main`.**
-
----
-
-## 🌿 Branching Conventions
-
-Always create branches **from the latest `v1.0` branch**.
-
-```bash
-git checkout v1.0
-git pull origin v1.0
-git checkout -b feature/<short-description>
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-### Branch Types
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-* 🌿 **Feature**: `feature/<short-description>`
-  *Example*: `feature/theme-toggle`
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-* 🐞 **Bugfix**: `bugfix/<short-description>`
-  *Example*: `bugfix/fix-navbar-spacing`
-
-* ♻️ **Refactor**: `refactor/<short-description>`
-  *Example*: `refactor/theme-context`
-
-> Keep branch names short, descriptive, and lowercase.
-
----
-
-## 📝 Commit Message Conventions
-
-This project follows **Conventional Commits**.
-
-**Format:**
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-<type>(optional-scope): short present-tense description
-```
-
-**Types:**
-
-* `feat` – new feature
-* `fix` – bug fix
-* `docs` – documentation changes
-* `chore` – tooling / maintenance
-* `refactor` – code restructuring (no behavior change)
-
-**Examples:**
-
-* `feat(auth): add login form`
-* `fix(header): align navigation links`
-* `refactor(theme): replace next-themes with custom context`
-* `docs(readme): update contribution guide`
-
----
-
-## 🔀 Pull Requests (PRs)
-
-### Target Branch
-
-* ✅ **All PRs must target `v1.0`**
-* ❌ **PRs to `main` are not allowed**
-
-### PR Title Format
-
-```
-<type>: short description
-```
-
-*Example*: `feat: add theme toggle`
-
-### PR Description Must Include
-
-* **What changed**
-* **Why it changed**
-* **How to test**
-
-### Rules
-
-* PRs require **repo owner approval**
-* Contributors **must not merge their own PRs**
-* All status checks must pass before merge
-
----
-
-## 🔄 Release Flow
-
-Only the **repo owner** performs releases.
-
-```
-feature/* or bugfix/*
-        ↓
-      v1.0   (integration & testing)
-        ↓
-      main   (stable release)
-```
-
-* Merging `v1.0` → `main` represents a **versioned release**
-* No direct commits or PRs into `main`
-
----
-
-## 🔧 Local Development
-
-```bash
-# Clone the repo
-git clone <YOUR_GIT_URL>
-
-# Go to project folder
-cd <PROJECT_NAME>
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
----
-
-## ✅ Status Checks & CI
-
-* All PRs must pass:
-
-  * Automated tests
-  * Linters
-  * Build checks
-* Merging is blocked if checks fail
-* Only the repo owner can merge after checks pass
-
----
-
-## 📌 Additional Notes
-
-* Always pull the latest `v1.0` before starting work
-* Keep branches short-lived
-* Delete branches after merge
-* Follow naming conventions strictly
-* For workflow or versioning questions, contact the repo owner
-
----
-
-🤝 **Thank you for contributing!**
-Following this workflow keeps the project stable, readable, and production-ready.
- 
